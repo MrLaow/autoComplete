@@ -48,7 +48,7 @@ $("#singleSelect").autoComplete({
 });
 
 Last : Remote service
-$("#multiplySelect").autoComplete({
+$("#singleSelect").autoComplete({
     url: "http://127.0.0.1:8080/auto/listAll",
     dataAttr:["email","url","id"],
     multiple:true,
@@ -65,7 +65,7 @@ The plugin supports many attributes and methods for you use.
 These attributes you can read resources,which has detailed introduction.
 There are four methods for you to use.
 
-1.$("#multiplySelect").autoComplete("getValue")
-2.$("#multiplySelect").autoComplete("setValue",{})
-3.$("#multiplySelect").autoComplete("setValues",[{},{},{}])
-4.$("#multiplySelect").autoComplete("clear")
+1.$("#singleSelect").autoComplete("getValue")
+2.$("#singleSelect").autoComplete("setValue",{})
+3.$("#singleSelect").autoComplete("setValues",[{},{},{}])
+4.$("#singleSelect").autoComplete("clear")
