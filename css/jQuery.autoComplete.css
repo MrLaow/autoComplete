@@ -1,0 +1,73 @@
+.auto_complete_panel {
+    position: absolute;
+    border: 1px #F3F3F3 solid;
+    background-color: #ffffff;
+    font-family: '宋体';
+    font-size: 12px;
+    display: none;
+    z-index: 9999;
+    overflow-y:auto;
+}
+
+.data_content {
+    padding: 0;
+}
+
+.resultUL {
+    margin: 0px;
+    padding: 0px;
+}
+
+.resultUL li {
+    list-style: none;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+.hoverClass {
+    background: #dfdfdf;
+    cursor: pointer;
+}
+
+.out_div {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.option_ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.inner-select-opt, .close-select-opt {
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.inner-select-opt {
+    display: inline-block;
+    background-color: #DEE7F8;
+    position:relative;
+    margin-left: 1px;
+}
+
+.close-select-opt {
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+}
+.text-context{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoComplete</title>
+    <link rel="stylesheet" href="../css/jQuery.autoComplete.css"/>
+    <script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../js/jQuery.autoComplete.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#singleSelect").autoComplete({
+                localData:[
+                    {
+                        "text":"张国立",
+                        "id":"1",
+                        "email":"zhangguoli@123.com",
+                        "url":"./img/1.jpg"
+                    },
+                    {
+                        "text":"张铁林",
+                        "id":"2",
+                        "email":"zhangtieli@123.com",
+                        "url":"./img/2.jpg"
+                    },
+                    {
+                        "text":"王涛",
+                        "id":"3",
+                        "email":"zhenjie@123.com",
+                        "url":"./img/3.jpg"
+                    },
+                    {
+                        "text":"徐燕",
+                        "id":"4",
+                        "email":"zhangguoli@123.com",
+                        "url":"./img/4.jpg"
+                    },
+                    {
+                        "text":"马云",
+                        "id":"5",
+                        "email":"zhangtieli@123.com",
+                        "url":"./img/5.jpg"
+                    },
+                    {
+                        "text":"马化腾",
+                        "id":"6",
+                        "email":"zhenjie@123.com",
+                        "url":"./img/6.jpg"
+                    }
+                ],
+                dataAttr:["email","url","id"],
+                callBack:function (data) {
+                    console.info(data);
+                }
+            });
+
+
+            $("#multiplySelect").autoComplete({
+                url: "data.json",
+                dataAttr:["email","url","id"],
+                multiple:true,
+                optionWidth:60,
+                optionBgColor:"#6e6e6e",
+                borderColor:"blue",
+                callBack:function (data) {
+                    console.info(data);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div><ul><li><input id="singleSelect" type="text"/></li></ul></div>
+
+    <div><ul><li><input id="multiplySelect" type="text" style="width:300px;"/></li></ul></div>
+</body>
+</html>
