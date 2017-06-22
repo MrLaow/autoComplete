@@ -7,8 +7,8 @@ It's very to use. Let's start!
 How to use this plugin?You can choose flowing three methods!
 Before these , you should edit you code like this
 
-Code:<div><ul><li><input id="singleSelect" type="text"/></li></ul></div>
-The input must wrapped by <div><ul><li></li></ul><div>,and it must has the attribute named id.
+Code:"<div><ul><li><input id='singleSelect' type='text'/></li></ul></div>"
+The input must wrapped by "<div><ul><li></li></ul><div>",and it must has the attribute named id.
 
 First one:This is most easiest example,with localData.
 
